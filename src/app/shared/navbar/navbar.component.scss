@@ -1,0 +1,65 @@
+.nav-btn {
+  background-color: #f96332;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px 5px 5px 0;
+  // transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #e0551a;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-btn i {
+  margin-right: 6px;
+}
+
+.social-btn.linkedin { background-color: #0a66c2; }
+.social-btn.github { background-color: #24292e; }
+.social-btn.gmail { background-color: #d44638; }
+
+.social-btn:hover {
+  opacity: 0.85;
+}
+
+.ul-div {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .ul-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-btn, .social-btn {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-btn, .social-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
